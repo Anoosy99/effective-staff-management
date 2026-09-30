@@ -1,0 +1,1 @@
+document.getElementById("closeSidebar").addEventListener("click",()=>document.querySelector("aside").classList.remove("open"));
