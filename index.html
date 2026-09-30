@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#4b1f6f">
+  <title>Effective Staff</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toast"></div>
+
+  <section id="login" class="login-shell">
+    <div class="brand-pane">
+      <div class="wordmark">effective</div>
+      <div>
+        <span class="kicker">STAFF MANAGEMENT</span>
+        <h1>Simple daily operations for your whole team.</h1>
+        <p>Tasks, staff records, salary statements and monthly reviews in one private workspace.</p>
+      </div>
+    </div>
+    <div class="login-pane">
+      <form id="loginForm" class="login-card">
+        <span class="kicker purple">WELCOME BACK</span>
+        <h2>Sign in</h2>
+        <p class="muted">Use your phone number and password.</p>
+        <label>Phone number
+          <input id="phone" type="tel" placeholder="05XXXXXXXX" required>
+        </label>
+        <label>Password
+          <input id="password" type="password" placeholder="Password" required>
+        </label>
+        <button class="primary" type="submit">Sign in</button>
+        <div class="demo">
+          <b>Prototype accounts</b>
+          <small>Owner: 0500000000 / admin123</small>
+          <small>Employee: 0551234567 / 123456</small>
+          <div class="row">
+            <button type="button" class="soft" data-fill="admin">Owner demo</button>
+            <button type="button" class="soft" data-fill="employee">Employee demo</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="app" class="app hidden">
+    <aside>
+      <div class="wordmark small">effective</div>
+      <nav id="nav"></nav>
+      <div class="profile">
+        <div class="avatar" id="sideAvatar"></div>
+        <div><b id="sideName"></b><small id="sideRole"></small></div>
+      </div>
+      <button id="logout" class="ghost">Sign out</button>
+    </aside>
+
+    <main>
+      <header>
+        <button id="menuBtn" class="menu">☰</button>
+        <div><span id="eyebrow" class="kicker purple"></span><h2 id="title"></h2></div>
+        <div class="avatar" id="topAvatar"></div>
+      </header>
+      <div id="content" class="content"></div>
+    </main>
+  </section>
+
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
